@@ -1,0 +1,15 @@
+.idea
+src
+test
+temp
+coverage
+.nyc_output
+gulpfile.js
+tsconfig.json
+tslint.json
+.travis.yml
+.gitignore
+.gitattributes
+.editorconfig
+.nycrc
+LICENSE

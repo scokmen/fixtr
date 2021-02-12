@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "sourceMap": false,
+        "noImplicitAny": true,
+        "esModuleInterop": true,
+        "baseUrl": ".",
+        "target": "es6",
+        "outDir": "dist",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "experimentalDecorators": true,
+        "typeRoots": [
+            "./node_modules/@types",
+            "./typings"
+        ]
+    },
+    "include": [
+        "./src/**/*.ts",
+        "./typings/*.d.ts"
+    ]
+}
