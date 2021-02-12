@@ -7,3 +7,4 @@ export const INVALID_STRING_PATTERN_MESSAGE = "String pattern must be a non-empt
 export const INVALID_STRING_LENGTH_MESSAGE = "String length must be an integer between 0 and 10000";
 export const INVALID_FIXTURE_OBJECT_MESSAGE = "Parameter must be an object with factory keys";
 export const INVALID_FUNCTION_MESSAGE = "Parameter must a function";
+export const INVALID_FACTORY_MESSAGE = "Parameter must be an instance of factory";

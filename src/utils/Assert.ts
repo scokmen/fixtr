@@ -58,4 +58,10 @@ export class Assert {
             throw new Error(message);
         }
     }
+
+    public static isFactoryInstance(factory: IFactory, message: string): void {
+        if (!check.instance(factory, Factory)) {
+            throw new Error(message);
+        }
+    }
 }
