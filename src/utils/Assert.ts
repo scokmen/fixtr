@@ -52,4 +52,10 @@ export class Assert {
             throw new Error(message);
         }
     }
+
+    public static isFunction(fn: Function, message: string): void {
+        if (!check.function(fn)) {
+            throw new Error(message);
+        }
+    }
 }
