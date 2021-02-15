@@ -8,3 +8,4 @@ export const INVALID_STRING_LENGTH_MESSAGE = "String length must be an integer b
 export const INVALID_FIXTURE_OBJECT_MESSAGE = "Parameter must be an object with factory keys";
 export const INVALID_FUNCTION_MESSAGE = "Parameter must a function";
 export const INVALID_FACTORY_MESSAGE = "Parameter must be an instance of factory";
+export const INVALID_ARRAY_MESSAGE = "Parameter must be a non-empty array";

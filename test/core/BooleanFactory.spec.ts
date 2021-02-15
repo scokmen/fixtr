@@ -74,8 +74,6 @@ describe("BooleanFactory", () => {
             expect(result).toBe(output);
             expect(booleanFactory.getChance()).toBe(chance);
             expect(stub.calledWithExactly(chance)).toBe(true);
-
-            stub.restore();
         });
     });
 });

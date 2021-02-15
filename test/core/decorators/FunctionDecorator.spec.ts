@@ -1,4 +1,4 @@
-import sinon from "sinon";
+import * as sinon from "sinon";
 import {MockFactory} from "../../MockFactory";
 import {FunctionDecorator} from "../../../src/core/decorators/FunctionDecorator";
 import {INVALID_FACTORY_MESSAGE, INVALID_FUNCTION_MESSAGE} from "../../../src/constants/ErrorMessages";

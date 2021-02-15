@@ -64,4 +64,10 @@ export class Assert {
             throw new Error(message);
         }
     }
+
+    public static isNonEmptyArray(array: Array<any>, message: string): void {
+        if (!check.nonEmptyArray(array)) {
+            throw new Error(message);
+        }
+    }
 }

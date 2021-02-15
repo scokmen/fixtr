@@ -94,8 +94,6 @@ describe("StringFactory", () => {
             expect(stringFactory.getPattern()).toBe(pattern);
             expect(stringFactory.getLength()).toBe(length);
             expect(stub.calledWithExactly(pattern, length)).toBe(true);
-
-            stub.restore();
         });
     });
 });

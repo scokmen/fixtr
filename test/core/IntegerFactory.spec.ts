@@ -112,8 +112,6 @@ describe("IntegerFactory", () => {
             expect(integerFactory.getMin()).toBe(min);
             expect(integerFactory.getMax()).toBe(max);
             expect(stub.calledWithExactly(min, max)).toBe(true);
-
-            stub.restore();
         });
     });
 });

@@ -24,4 +24,8 @@ export class Random {
     public static decimal(min: number, max: number): number {
         return rand.real(min, max, true)(Random.engine);
     }
+
+    public static pick<T>(source: ArrayLike<T>): T {
+        return rand.pick(this.engine, source);
+    }
 }

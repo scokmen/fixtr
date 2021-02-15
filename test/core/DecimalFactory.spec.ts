@@ -113,8 +113,6 @@ describe("DecimalFactory", () => {
             expect(decimalFactory.getMin()).toBe(min);
             expect(decimalFactory.getMax()).toBe(max);
             expect(stub.calledWithExactly(min, max)).toBe(true);
-
-            stub.restore();
         });
     });
 });

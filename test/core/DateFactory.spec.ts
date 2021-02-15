@@ -128,8 +128,6 @@ describe("DateFactory", () => {
             expect(dateFactory.getMin()).toBe(min);
             expect(dateFactory.getMax()).toBe(max);
             expect(stub.calledWithExactly(min, max)).toBe(true);
-
-            stub.restore();
         });
     });
 });

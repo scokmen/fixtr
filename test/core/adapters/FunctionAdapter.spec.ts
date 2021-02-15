@@ -5,6 +5,12 @@ import {ProducerFunction} from "../../../src/core/types/ProducerFunction";
 
 describe("FunctionAdapter", () => {
 
+    const sandbox = sinon.createSandbox();
+
+    afterEach(() => {
+        sandbox.verifyAndRestore();
+    });
+
     describe(".constructor()", () => {
 
         it("should throw error when given function is not a function", () => {
@@ -28,7 +34,7 @@ describe("FunctionAdapter", () => {
 
             // given
             const value = {};
-            const stub = sinon.stub().returns(value);
+            const stub = sandbox.stub().returns(value);
             const functionAdapter = new FunctionAdapter(stub);
 
             // when
