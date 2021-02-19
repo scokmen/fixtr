@@ -1,6 +1,7 @@
 import * as check from "check-types";
 import {Factory} from "../core/Factory";
 import {IFactory} from "../core/IFactory";
+import {FixtureModel} from "../core/types/FixtureModel";
 
 export class Assert {
 
@@ -46,8 +47,8 @@ export class Assert {
         }
     }
 
-    public static isObjectFactoryModel(model: Record<string, IFactory>, message: string): void {
-        const isValid = Object.keys(model).every((key) => check.instance(model[key], Factory));
+    public static isObjectFactoryModel<OUT extends object>(model: FixtureModel<OUT>, message: string): void {
+        const isValid = Object.keys(model).every((key: string) => check.instance(model[key as keyof OUT], Factory));
         if (!isValid) {
             throw new Error(message);
         }

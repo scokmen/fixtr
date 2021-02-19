@@ -61,7 +61,7 @@ describe("ObjectFactory", () => {
             const result = objectFactory.single();
 
             // then
-            expect(result["key"]).toBe(value);
+            expect(result.key).toBe(value);
             expect(objectFactory.getModel()).toBe(model);
         });
     });
