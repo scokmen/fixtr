@@ -1,5 +1,6 @@
 // chance
 export const MINIMUM_CHANCE = 0;
+export const DEFAULT_CHANCE = 50;
 export const MAXIMUM_CHANCE = 100;
 
 // array length
